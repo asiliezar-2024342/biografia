@@ -1,0 +1,19 @@
+{
+  "name": "biografia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/assets/styles/input.css -o ./src/assets/styles/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/assets/styles/input.css -o ./src/assets/styles/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.0",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwind-animations": "^1.0.1",
+    "tailwindcss": "^4.1.18"
+  }
+}
