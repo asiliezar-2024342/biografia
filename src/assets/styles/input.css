@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
-@import 'tailwind-animations';
+@import "tailwind-animations";
 
 @theme {
-    
+  --color-primary: #243165;
+  --color-primary-light: #83a5fa;
+  --color-primary-dark: #232461;
+}
+
+.line-button {
+  @apply w-full h-1 bg-black transition-all duration-300;
 }
