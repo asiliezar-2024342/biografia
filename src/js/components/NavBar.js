@@ -12,14 +12,14 @@ export class Header extends HTMLElement {
                 <nav class="hidden flex-col md:flex md:flex-row w-full h-dvh p-2 justify-center items-center md:justify-between gap-5 bg-white md:bg-primary-dark/35 md:backdrop-blur-md md:border-b border-white/10 md:text-white absolute top-0 left-0 md:h-auto md:w-full" id="navBar">
                     
                     <picture>
-                        <source media="(max-width: 768px)" srcset="./src/assets/img/logo.avif" type="image/avif">
-                        <source media="(min-width: 768px)" srcset="./src/assets/img/logo-ligth.avif" type="image/avif">
+                        <source media="(max-width: 768px)" srcset="/src/assets/img/logo.avif" type="image/avif">
+                        <source media="(min-width: 768px)" srcset="/src/assets/img/logo-ligth.avif" type="image/avif">
                         <img alt="Logo" class="h-16"/>
                     </picture> 
 
                     <ul class="flex flex-col justify-center items-center md:flex-row gap-5 ">
-                        <li class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"><a href="index.html">Interés</a></li>
-                        <li class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"><a href="biografia.html">Biografía</a></li>
+                        <li class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"><a href="/index.html">Interés</a></li>
+                        <li class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"><a href="/src/pages/biography.html">Biografía</a></li>
                     </ul>
                     <button class="bg-primary-dark text-white p-2 rounded-lg cursor-pointer hover:bg-primary transition-colors duration-300">Ir a Kinal</button>
                 </nav>
