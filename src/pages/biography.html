@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biografía</title>
+    <link rel="stylesheet" href="../assets/styles/output.css" />
+    <script type="module" src="../js/components/NavBar.js"></script>
+    <style>
+      @keyframes parabolic-trajectory {
+        0% {
+          transform: translate(-80dvw, 40dvh) scale(0.5);
+        }
+
+        22% {
+          transform: translate(-30dvw, -10dvh) scale(0.8);
+        }
+
+        55% {
+          transform: translate(0, 0) scale(1);
+        }
+
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
+      .launch-ball {
+        animation: parabolic-trajectory 2.2s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate;
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <nav-bar></nav-bar>
+
+    <section class="h-dvh flex justify-center items-end bg-white">
+      <div class="relative h-dvh w-full flex justify-center items-center">
+        <img
+          class="absolute bottom-0 w-full max-w-[650px] object-cover px-10 pointer-events-none z-1"
+          src="../assets/img/angel-siliezar.webp"
+          alt="Angel Siliezar"
+        />
+
+        <img
+          class="absolute bottom-1/2 right-0 translate-x-20 w-50 z-10 pointer-events-none"
+          src="../assets/img/basket.avif"
+          alt="Canasta"
+        />
+        <img
+          src="../assets/img/kobe-bryant.avif"
+          alt="Silueta de Kobe Bryant"
+          class="absolute bottom-0 md:left-10 lg:left-20 xl:left-1/9 w-44 z-0 hidden md:block pointer-events-none"
+        />
+
+        <div
+          class="absolute bottom-[55%] right-12 z-0 launch-ball pointer-events-none"
+        >
+          <img
+            src="../assets/img/ball-shadow-basket.webp"
+            alt="Balón"
+            class="size-18 object-contain animate-spin"
+          />
+        </div>
+        <span
+          class="absolute top-10 text-7xl font-bold text-primary z-10 md:top-1/3 md:left-20 lg:text-8xl xl:text-9xl xl:left-1/8"
+          >Angel</span
+        >
+        <span
+          class="absolute top-30 text-7xl font-bold z-10 lg:text-8xl md:top-1/2 md:right-5 xl:text-9xl xl:right-1/8 mix-blend-difference text-white"
+          >Siliezar</span
+        >
+
+        <span
+          class="absolute bottom-10 left-0 text-[8vw] font-bold text-white uppercase text-center leading-[0.85] z-20 pointer-events-none mix-blend-difference md:text-5xl md:text-center md:w-full"
+        >
+          Si puedes imaginarlo puedes programarlo
+        </span>
+      </div>
+    </section>
+    <section class="h-dvh bg-primary"></section>
+  </body>
+</html>
