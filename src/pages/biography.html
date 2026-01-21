@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biografía</title>
+    <link rel="stylesheet" href="../assets/styles/output.css" />
+    <script type="module" src="../js/components/NavBar.js"></script>
+    <style>
+      @keyframes parabolic-trajectory {
+        0% {
+          transform: translate(-80dvw, 40dvh) scale(0.5);
+        }
+
+        22% {
+          transform: translate(-30dvw, -10dvh) scale(0.8);
+        }
+
+        55% {
+          transform: translate(0, 0) scale(1);
+        }
+
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
+      .launch-ball {
+        animation: parabolic-trajectory 2.2s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate;
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden bg-primary">
+    <nav-bar></nav-bar>
+
+    <section class="h-dvh flex justify-center items-end bg-white">
+      <div
+        class="relative h-dvh w-full flex justify-center items-center bg-white"
+      >
+        <img
+          class="absolute bottom-0 w-full max-w-[650px] object-cover px-10 pointer-events-none z-1 animate-slide-in-bottom"
+          src="../assets/img/angel-siliezar.webp"
+          alt="Angel Siliezar"
+        />
+
+        <img
+          class="absolute bottom-1/2 right-0 translate-x-20 w-50 z-10 pointer-events-none"
+          src="../assets/img/basket.avif"
+          alt="Canasta"
+        />
+        <img
+          src="../assets/img/kobe-bryant.avif"
+          alt="Silueta de Kobe Bryant"
+          class="absolute bottom-0 md:left-10 lg:left-20 xl:left-1/9 w-44 z-0 hidden md:block pointer-events-none"
+        />
+
+        <div
+          class="absolute bottom-[55%] right-12 z-0 launch-ball pointer-events-none"
+        >
+          <img
+            src="../assets/img/ball-shadow-basket.webp"
+            alt="Balón"
+            class="size-18 object-contain animate-spin"
+          />
+        </div>
+        <span
+          class="absolute top-10 text-7xl font-bold text-primary z-10 md:top-1/3 md:left-20 lg:text-8xl xl:text-9xl xl:left-1/8 animate-fade-in-up animate-delay-200"
+          >Angel</span
+        >
+        <span
+          class="absolute top-30 text-7xl font-bold z-10 lg:text-8xl md:top-1/2 md:right-5 xl:text-9xl xl:right-1/8 mix-blend-difference text-white animate-fade-in-up animate-delay-400"
+          >Siliezar</span
+        >
+
+        <span
+          class="absolute bottom-10 left-0 text-[8vw] font-bold text-white uppercase text-center leading-[0.85] z-20 pointer-events-none mix-blend-difference md:text-5xl md:text-center md:w-full animate-fade-in-up animate-delay-600"
+        >
+          Si puedes imaginarlo puedes programarlo
+        </span>
+      </div>
+    </section>
+    <section class="h-dvh section-container">
+      <section class="section-content h-dvh">
+        <h2 class="title-section">Biografía (Resumida)</h2>
+        <p class="text-balance text-justify">
+          Angel el cual su nombre completo es Angel David Siliezar López, nació
+          el 23 de agosto de 2007 en la Ciudad de Guatemala, Guatemala. Nació un
+          problema con los riñones el cual descrubrió 12 años después.
+        </p>
+        <p class="text-balance text-justify">
+          Desde muy pequeño demostró un fuerte interés por las computadoras, se
+          la pasaba viendo videos de YouTube sobre videojuegos, pues su laptop
+          no era lo suficientemente potente para jugar.
+        </p>
+        <p class="text-balance text-justify">
+          A los 12 años notó que tenía una pc vieja, la cual le causó curiosidad
+          y la desarmó para ver sus componentes, le hizo una limpieza y la puso
+          a funcionar. En ese momento confirmó que le gustaban las computadoras.
+        </p>
+        <p class="text-balance text-justify">
+          Además un compañero de él llevaba unos años jugando basket, le hablaba
+          de eso y Angel se apasionó por el baloncesto. Pero aún no se decidía
+          por jugar.
+        </p>
+        <p class="text-balance text-justify">
+          Un día en el parque lo invitaron a jugar un 21 de basket (El primero
+          en anotar 21 puntos gana), y desde ahí empezo su pasión por el basket.
+          Tenía el sueño de poder representar a su país en competencias
+          internacionales. Empezo a ver la NBA, y se vió reflejado en Kobe
+          Bryant Q.E.P.D, la mentalidad, disciplina además que cumplía años el
+          mismo día que Angel. (Luego pasaron varios años, jugó en campeonatos
+          locales, fue becado en el club Leones para poder entrenar, pero luego
+          tuvo que dejarlo por problemas personales).
+        </p>
+        <p class="text-balance text-justify">
+          Luego al terminar básicos, no se decidia por qué carrera estudiar ni
+          en que institución. Así que descubrio Fundación Kinal, ingresó y
+          descubrió de lo que se enamoró, la programación.
+        </p>
+      </section>
+    </section>
+    <section class="bg-white h-dvh section-container">
+      <section class="section-content text-black">
+        <div class="flex flex-col gap-5 text-black">
+          <h2 class="title-section">Expectativas para este ciclo</h2>
+          <h3 class="text-primary font-bold text-xl">Academicás</h3>
+          <p class="text-balance text-justify">
+            En esta área espero poder mantener y si es posible mejorar mi
+            promedio pero más importante es poder aprender y entender mejor los
+            temas que se nos presentan. Y poder analizar si la beca Juan
+            Bautista Gutiérrez es una buena opción para luchar.
+          </p>
+          <h3 class="text-primary font-bold text-xl">Técnicas</h3>
+          <p class="text-balance text-justify">
+            En esta área mis expectativas son muchos más altas, ya que esto es
+            lo que me apasiona, y en verdad espero que este año sea el comienzo
+            de un buen futuro profesional, sentar las bases, el comienzo de mi
+            historia y que se convierta en una de éxito.
+          </p>
+          <span class="text-justify font-bold text-primary text-lg"
+            >El tiempo que voy a dedicar a mis estudios es tiempo completo, es
+            mi total prioridad. Terminar los cimientos de mi éxito.</span
+          >
+        </div>
+        <div class="text-black">
+          <h2 class="title-section">Habilidades para adquirir</h2>
+          <ul class="text-justify text-md list-disc">
+            <li>Desplegar aplicaciones.</li>
+            <li>Buenas prácticas de programación.</li>
+            <li>Base de datos no relacionales.</li>
+            <li>Cómo decidir la arquitectura de un proyecto.</li>
+            <li>Usar frameworks de frontend.</li>
+            <li>Hacer sistemas full stack.</li>
+            <li>Hacer aplicaciones móviles.</li>
+            <li>Implementar IA en proyectos.</li>
+            <li>Aprender metodologías de trabajo.</li>
+            <li>Dominar la terminal.</li>
+            <li>Dominar Git con flujo de trabajo colaborativo.</li>
+            <li>Etc</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
