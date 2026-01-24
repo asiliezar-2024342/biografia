@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundación Kinal</title>
+    <link rel="stylesheet" href="../assets/styles/output.css" />
+    <script type="module" src="../js/redesign.js"></script>
+  </head>
+  <body class="font-rubik overflow-hidden">
+    <div
+      id="animation-entry"
+      class="fixed top-0 left-0 w-dvw h-dvh z-100 bg-primary flex justify-center items-center flex-col gap-5"
+    >
+      <img
+        src="../assets/img/65-years-kinal.png"
+        alt="Fundación Kinal"
+        class="size-50% animate-fade-in-down animate-delay-200"
+      />
+      <h2
+        class="text-3xl text-white font-bold animate-fade-in-up animate-delay-800 uppercase"
+      >
+        El trabajo bien hecho
+      </h2>
+    </div>
+
+    <header
+      class="relative w-full md:p-0 bg-transparent z-50 md:fixed top-0 left-0 right-0 md:w-full"
+    >
+      <button
+        id="btnMenu"
+        class="md:hidden group flex flex-col justify-center items-center gap-1.5 w-10 h-10 border-none absolute top-0 left-0 z-50"
+      >
+        <span class="line-button"></span>
+        <span class="line-button"></span>
+        <span class="line-button"></span>
+      </button>
+
+      <nav
+        class="hidden flex-col md:flex md:flex-row w-full h-dvh p-2 justify-center items-center md:justify-between gap-5 bg-white md:bg-primary-dark/35 md:backdrop-blur-md md:border-b border-white/10 md:text-white absolute top-0 left-0 md:h-auto md:w-full"
+        id="navBar"
+      >
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="/src/assets/img/logo.avif"
+            type="image/avif"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/src/assets/img/logo-ligth.avif"
+            type="image/avif"
+          />
+          <img alt="Logo" class="h-16" />
+        </picture>
+
+        <ul class="flex flex-col justify-center items-center md:flex-row gap-5">
+          <li
+            class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"
+          >
+            <a href="https://www.kinal.org.gt/apoyanos" target="_blank"
+              >APOYANOS</a
+            >
+          </li>
+          <li
+            class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"
+          >
+            <a href="https://www.kinal.org.gt/quienes-somos" target="_blank"
+              >QUIENES SOMOS</a
+            >
+          </li>
+          <li
+            class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"
+          >
+            <a href="https://www.kinal.org.gt/peritostecnicos" target="_blank"
+              >EDUCACIÓN</a
+            >
+          </li>
+          <li
+            class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"
+          >
+            <a href="https://www.kinal.org.gt/antiguosalumnos" target="_blank"
+              >ANTIGUOS ALUMNOS</a
+            >
+          </li>
+          <li
+            class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"
+          >
+            <a href="https://www.kinal.org.gt/trabajo" target="_blank"
+              >BOLSA DE EMPLEOS</a
+            >
+          </li>
+          <li
+            class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"
+          >
+            <a
+              href="https://www.kinal.org.gt/blog/categories/coordinaci%C3%B3n"
+              target="_blank"
+              >COORDINACIÓN</a
+            >
+          </li>
+          <li
+            class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"
+          >
+            <a href="https://kinal.academy/my/" target="_blank"
+              >CAMPUS VIRTUAL</a
+            >
+          </li>
+          <li
+            class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"
+          >
+            <a href="https://www.kinal.org.gt/blog" target="_blank">BLOG</a>
+          </li>
+        </ul>
+        <a
+          href="/src/pages/biography.html"
+          class="bg-primary-dark text-white p-2 rounded-lg cursor-pointer hover:bg-primary transition-colors duration-300"
+          >Salir de Kinal</a
+        >
+      </nav>
+    </header>
+
+    <main class="bg-kinal-blue-dark">
+      <section
+        class="h-dvh relative timeline-view animate-range-[entry_0%_cover_45%]"
+      >
+        <div
+          class="relative flex items-center justify-center h-full overflow-hidden"
+        >
+          <video
+            src="../assets/media/file.mp4"
+            class="absolute top-0 left-0 w-full h-full object-cover brightness-50 [mask-image:linear-gradient(to_top,transparent,black_50%)]"
+            autoplay
+            muted
+            loop
+          ></video>
+          <img
+            src="../assets/img/KINAL LETRAS BLANCAS 2.avif"
+            class="relative w-3/4 md:w-1/2 z-10 animate-fade-in-right"
+            alt="Logo Kinal"
+          />
+        </div>
+      </section>
+
+      <section
+        class="min-h-dvh h-auto py-20 flex flex-col justify-center items-center gap-10 px-4"
+      >
+        <section class="flex flex-col justify-center items-center gap-8 w-full">
+          <h2
+            class="text-3xl md:text-5xl text-white font-bold text-center animate-fade-in-up [animation-timeline:view()] [animation-range:entry_20%_cover_30%]"
+          >
+            Con el apoyo de
+          </h2>
+          <ul class="flex flex-wrap justify-center items-center gap-5">
+            <li
+              class="bg-primary-dark p-2 rounded-lg hover:scale-105 transition-transform"
+            >
+              <img src="../assets/img/brand-1.avif" class="h-10 md:h-auto" />
+            </li>
+            <li
+              class="bg-primary-dark p-2 rounded-lg hover:scale-105 transition-transform"
+            >
+              <img src="../assets/img/brand.2.avif" class="h-10 md:h-auto" />
+            </li>
+            <li
+              class="bg-primary-dark p-2 rounded-lg hover:scale-105 transition-transform"
+            >
+              <img src="../assets/img/brand-3.avif" class="h-10 md:h-auto" />
+            </li>
+            <li
+              class="bg-primary-dark p-2 rounded-lg hover:scale-105 transition-transform"
+            >
+              <img src="../assets/img/brand-4.avif" class="h-10 md:h-auto" />
+            </li>
+            <li
+              class="bg-primary-dark p-2 rounded-lg hover:scale-105 transition-transform"
+            >
+              <img src="../assets/img/brand-5.avif" class="h-10 md:h-auto" />
+            </li>
+            <li
+              class="bg-primary-dark p-2 rounded-lg hover:scale-105 transition-transform"
+            >
+              <img src="../assets/img/brand-6.avif" class="h-10 md:h-auto" />
+            </li>
+            <li
+              class="bg-primary-dark p-2 rounded-lg hover:scale-105 transition-transform"
+            >
+              <img src="../assets/img/brand-7.avif" class="h-10 md:h-auto" />
+            </li>
+          </ul>
+        </section>
+
+        <section class="flex flex-col justify-center items-center gap-8 w-full">
+          <h2
+            class="text-3xl md:text-5xl text-white font-bold text-center animate-fade-in-up [animation-timeline:view()] [animation-range:entry_20%_cover_30%]"
+          >
+            Apoyando a (2024)
+          </h2>
+          <div
+            class="grid grid-cols-2 md:flex justify-center items-center gap-5 text-white w-full max-w-5xl px-2"
+          >
+            <div
+              class="flex flex-col justify-center items-center gap-2 bg-amber-400 p-6 w-full rounded-xl shadow-md shadow-amber-400 hover:bg-amber-400/80 transition-all duration-300 animate-fade-in-up"
+            >
+              <span class="text-3xl font-bold">25K</span>
+              <span class="text-center text-sm md:text-base"
+                >Escuela Técnica</span
+              >
+            </div>
+            <div
+              class="flex flex-col justify-center items-center gap-2 bg-primary p-6 w-full rounded-xl shadow-md shadow-primary hover:bg-primary/80 transition-all duration-300 animate-fade-in-up"
+            >
+              <span class="text-3xl font-bold">1.5K</span>
+              <span class="text-center text-sm md:text-base">Ciclo Básico</span>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center gap-2 bg-primary-dark p-6 w-full rounded-xl shadow-md shadow-primary-dark hover:bg-primary-dark/80 transition-all duration-300 animate-fade-in-up"
+            >
+              <span class="text-3xl font-bold">6K</span>
+              <span class="text-center text-sm md:text-base"
+                >Diversificado</span
+              >
+            </div>
+            <div
+              class="flex flex-col justify-center items-center gap-2 bg-orange-400 p-6 w-full rounded-xl shadow-md shadow-orange-400 hover:bg-orange-500 transition-all duration-300 animate-fade-in-up"
+            >
+              <span class="text-3xl font-bold">+32K</span>
+              <span class="text-center text-sm md:text-base">Beneficiados</span>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section
+        class="min-h-[50vh] flex flex-col justify-center items-center py-20 bg-white"
+      >
+        <h2
+          class="text-3xl md:text-5xl text-primary font-bold mb-10 text-center animate-fade-in-up [animation-timeline:view()] [animation-range:entry_20%_cover_30%]"
+        >
+          Casos de éxito
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl px-4 md:px-8"
+        >
+          <a
+            href="https://www.kinal.org.gt/antiguosalumnos?pgid=m0m2d0ok-7e6c3b19-ccb5-4b08-ba98-f88a26e3eff3"
+            target="_blank"
+            class="flex justify-center animate-fade-in-up"
+          >
+            <img
+              src="../assets/img/case1.avif"
+              alt="Caso Exito 1"
+              class="w-full h-auto max-h-40 object-contain hover:scale-110 transition-transform duration-300"
+            />
+          </a>
+          <a
+            href="https://www.kinal.org.gt/antiguosalumnos?pgid=m0m2d0ok-d342a7e7-7bd8-4b53-9b69-acb5b54a4036"
+            target="_blank"
+            class="flex justify-center animate-fade-in-up"
+          >
+            <img
+              src="../assets/img/case2.avif"
+              alt="Caso Exito 2"
+              class="w-full h-auto max-h-40 object-contain hover:scale-110 transition-transform duration-300"
+            />
+          </a>
+          <a
+            href="https://www.kinal.org.gt/antiguosalumnos?pgid=m0m2d0ok-101308d3-44de-4d42-b5a8-f812dc7ce600"
+            target="_blank"
+            class="flex justify-center animate-fade-in-up"
+          >
+            <img
+              src="../assets/img/case3.avif"
+              alt="Caso Exito 3"
+              class="w-full h-auto max-h-40 object-contain hover:scale-110 transition-transform duration-300"
+            />
+          </a>
+          <a
+            href="https://www.kinal.org.gt/antiguosalumnos?pgid=m0m2d0ok-3fa56aa4-0581-44ed-a27d-9d48db3ceb6c"
+            target="_blank"
+            class="flex justify-center animate-fade-in-up"
+          >
+            <img
+              src="../assets/img/case4.avif"
+              alt="Caso Exito 4"
+              class="w-full h-auto max-h-40 object-contain hover:scale-110 transition-transform duration-300"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="bg-white py-16 px-4 md:px-8 font-sans">
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+          <div class="text-center mb-12 max-w-4xl animate-fade-in-up">
+            <div class="flex justify-center items-center mb-4">
+              <img
+                src="../assets/img/eltrabajobien.avif"
+                alt="El Trabajo Bien Hecho"
+                class="size-32 md:size-40"
+              />
+            </div>
+
+            <h2
+              class="text-3xl md:text-5xl font-bold text-primary-dark mb-6 uppercase tracking-wide animate-fade-in-up [animation-timeline:view()] [animation-range:entry_20%_cover_30%]"
+            >
+              Tu camino al éxito está en Kinal
+            </h2>
+            <p
+              class="text-gray-600 text-sm md:text-base leading-relaxed text-center px-2"
+            >
+              Kinal es un Centro Educativo privado, no lucrativo, dirigido a la
+              formación técnica profesional de jóvenes y adultos, de beneficio
+              colectivo y asistencia social en favor de los sectores más
+              necesitados de la comunidad. <br class="hidden md:block" />
+              Nuestro valor fundamental es enseñar a realizar el trabajo bien
+              hecho, que sea la base de la superación de alumnos y el medio para
+              servir a los demás.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mb-16">
+            <div
+              class="flex flex-col items-center text-center group animate-fade-in-up"
+            >
+              <div
+                class="relative w-full mb-6 overflow-hidden rounded-4xl shadow-lg bg-gray-200"
+              >
+                <img
+                  src="../assets/img/individualMesa de trabajo 2.avif"
+                  alt="Ciclo Básico"
+                  class="w-full h-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <p class="mt-2 text-gray-500 text-sm px-4 mb-4">
+                Kinal ofrece su programa de Educación General Básica para todos
+                aquellos jóvenes que buscan una orientación técnica y excelencia
+                académica.
+              </p>
+              <a
+                href="#"
+                class="bg-primary-dark text-white font-bold py-2 px-8 rounded-full text-sm hover:bg-primary transition-colors"
+              >
+                CONOCE MÁS
+              </a>
+            </div>
+
+            <div
+              class="flex flex-col items-center text-center group animate-fade-in-up"
+            >
+              <div
+                class="relative w-full mb-6 overflow-hidden rounded-4xl shadow-lg bg-gray-200"
+              >
+                <img
+                  src="../assets/img/ruta02.avif"
+                  alt="Diversificado"
+                  class="w-full h-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <p class="mt-2 text-gray-500 text-sm px-4 mb-4">
+                Durante 3 años se prepara al joven de forma técnica y académica,
+                el egresado estará listo para trabajar en el ramo técnico...
+              </p>
+              <a
+                href="#"
+                class="bg-primary-dark text-white font-bold py-2 px-8 rounded-full text-sm hover:bg-primary transition-colors"
+              >
+                CONOCE MÁS
+              </a>
+            </div>
+
+            <div
+              class="flex flex-col items-center text-center group animate-fade-in-up"
+            >
+              <div
+                class="relative w-full mb-6 overflow-hidden rounded-4xl shadow-lg bg-gray-200"
+              >
+                <img
+                  src="../assets/img/ruta03.avif"
+                  alt="Escuela Técnica"
+                  class="w-full h-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <p class="mt-2 text-gray-500 text-sm px-4 mb-4">
+                Contamos con más de 30 especialidades técnicas y tecnológicas
+                que pueden favorecer tu crecimiento y/o tu inserción laboral.
+              </p>
+              <a
+                href="#"
+                class="bg-primary-dark text-white font-bold py-2 px-8 rounded-full text-sm hover:bg-primary transition-colors"
+              >
+                CONOCE MÁS
+              </a>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
+            <div
+              class="flex flex-col items-center text-center group animate-fade-in-up"
+            >
+              <div
+                class="relative w-full mb-6 overflow-hidden rounded-4xl shadow-lg bg-gray-200"
+              >
+                <img
+                  src="../assets/img/ruta05.avif"
+                  alt="Tu Negocio"
+                  class="w-full h-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <p class="mt-2 text-gray-500 text-sm px-8">
+                Podemos diseñar conjuntamente el programa de formación
+                profesional que mejor se adapte a tus necesidades de
+                capacitación.
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col items-center text-center group animate-fade-in-up"
+            >
+              <div
+                class="relative w-full mb-6 overflow-hidden rounded-4xl shadow-lg bg-gray-200"
+              >
+                <img
+                  src="../assets/img/ruta04.avif"
+                  alt="Técnico Universitario"
+                  class="w-full h-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <p class="mt-2 text-gray-500 text-sm px-8">
+                Dirigido al fortalecimiento de mandos medios y especialmente
+                aquellos que han cursado una carrera técnica y desean
+                continuar...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-100 py-24 px-4 overflow-hidden relative">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+        >
+          <div
+            class="text-center md:text-left space-y-6 z-10 animate-fade-in-up"
+          >
+            <h2
+              class="text-3xl md:text-5xl font-black text-primary-dark uppercase leading-tight tracking-tight animate-fade-in-up [animation-timeline:view()] [animation-range:entry_20%_cover_30%]"
+            >
+              ¡Necesitamos más <br />
+              <span class="text-primary-dark/80">jóvenes de este lado!</span>
+            </h2>
+
+            <p
+              class="text-gray-600 text-lg md:text-xl leading-relaxed max-w-lg mx-auto md:mx-0"
+            >
+              Cada donación que haces ayuda a la educación de un joven
+              guatemalteco de escasos recursos a tener una educación de calidad.
+            </p>
+
+            <a
+              href="https://www.kinal.org.gt/apoyanos"
+              target="_blank"
+              class="inline-flex items-center gap-2 text-primary-dark font-bold tracking-widest hover:text-primary transition-colors duration-300 mt-4 group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-yellow-400 group-hover:scale-110 transition-transform"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+                />
+              </svg>
+              APÓYANOS
+            </a>
+          </div>
+
+          <div
+            class="relative flex justify-center md:justify-end animate-fade-in-up"
+          >
+            <div
+              class="relative bg-white p-4 pb-16 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 ease-out max-w-md w-full"
+            >
+              <div
+                class="absolute -top-4 left-1/2 -translate-x-1/2 w-32 h-8 bg-yellow-100/60 shadow-sm -rotate-3 backdrop-blur-sm z-20 border-l border-r border-white/20"
+              ></div>
+
+              <div
+                class="overflow-hidden bg-gray-200 aspect-4/3 relative group cursor-pointer"
+              >
+                <img
+                  src="../assets/img/instalations.avif"
+                  alt="Instalaciones Kinal"
+                  class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                />
+                <div
+                  class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"
+                ></div>
+              </div>
+
+              <div
+                class="absolute bottom-4 left-0 right-0 text-center font-handwriting text-gray-500 font-medium transform -rotate-1"
+              >
+                Fundación Kinal
+              </div>
+            </div>
+
+            <div
+              class="absolute -z-10 top-10 right-10 md:right-20 bg-white p-2 shadow-lg -rotate-6 w-48 h-48 hidden md:block opacity-60"
+            >
+              <div class="w-full h-full bg-gray-200"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="min-h-dvh text-primary-dark flex flex-col justify-center items-center gap-5 bg-white py-20 px-4 text-center"
+      >
+        <h2
+          class="text-3xl md:text-5xl font-bold animate-fade-in-up [animation-timeline:view()] [animation-range:entry_20%_cover_30%]"
+        >
+          Explicación de diseño
+        </h2>
+        <div class="max-w-3xl space-y-4 animate-fade-in-up">
+          <p class="text-lg md:text-xl">
+            Considero que este diseño es más atractivo y moderno, además de su
+            paleta de colores que identifica a Kinal.
+          </p>
+          <p class="text-lg md:text-xl">
+            Además, He agregado y resaltado cosas importantes como los casos de
+            éxito para que los interesados a ingresar al colegio puedan ver
+            resultados obtenidos de Ex-Estudiantes.
+          </p>
+          <p class="text-lg md:text-xl">
+            En esta propuesta he recalcalo lo importante de dar a mostrar lo que
+            ofrece Kinal, OPORTUNIDADES, donde se brinde la seguridad al
+            aspirante de tener un mejor futuro si elige Kinal.
+          </p>
+          <p class="text-lg md:text-xl">
+            Tambien he eliminado varias secciones que no eran relevantes para
+            esta página en especifico ya que estan centradas más para alumnos
+            que están o estuvieron en Kinal.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#101D3B] text-white pt-16 pb-6 font-sans text-sm">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col gap-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+          <div class="flex flex-col gap-6 text-left">
+            <div>
+              <h3 class="font-bold text-lg mb-1">CONTÁCTANOS</h3>
+              <p>infocet@kinal.org.gt</p>
+              <p>infobas@kinal.org.gt</p>
+            </div>
+
+            <a
+              href="#"
+              class="bg-white text-[#101D3B] font-bold rounded-full px-4 py-1 flex items-center gap-2 w-fit hover:bg-gray-200 transition"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                />
+              </svg>
+              ADMISIONES 2026
+            </a>
+
+            <div class="flex gap-3">
+              <a
+                href="#"
+                class="bg-white text-[#101D3B] p-2 rounded-full hover:scale-110 transition"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="bg-white text-[#101D3B] p-2 rounded-full hover:scale-110 transition"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="bg-white text-[#101D3B] p-2 rounded-full hover:scale-110 transition"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center text-xs tracking-widest opacity-80 mt-auto">
+        FUNDACIÓN KINAL | 2024 TODOS LOS DERECHOS RESERVADOS
+      </div>
+    </footer>
+  </body>
+</html>
