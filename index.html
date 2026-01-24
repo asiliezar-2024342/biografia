@@ -1,14 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-</body>
-
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab1</title>
+    <link rel="stylesheet" href="./src/assets/styles/output.css" />
+    <script type="module" src="./src/js/index.js"></script>
+  </head>
+  <body>
+    <!-- Componente de la barra de navegación -->
+    <nav-bar></nav-bar>
+    <main class="bg-white">
+      <section class="relative flex flex-col justify-center items-center h-dvh">
+        <div class="absolute inset-0">
+          <img
+            src="./src/assets/img/banner-basketball.webp"
+            class="w-full h-full object-cover brightness-50"
+            alt="Basketball"
+          />
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <h2
+            class="text-[13dvw] font-bold text-white text-shadow-xl shadow-white animate-slide-up-fade"
+          >
+            BASKETBALL
+          </h2>
+          <h3
+            class="text-white text-[4dvw] font-bold animate-slide-up-fade delay-100"
+          >
+            MI PASIÓN
+          </h3>
+        </div>
+      </section>
+      <section class="section-container bg-primary">
+        <section class="section-content">
+          <h2 class="text-primary-light title-section">¿Qué me apasiona?</h2>
+          <div class="flex flex-col gap-8">
+            <p class="text-lg text-balance text-center">
+              Como bien dice el titulo, me apasiona el baloncesto, un deporte
+              que practico desde los 14 años y que me ha enseñado muchos
+              valores.
+            </p>
+            <p class="text-lg text-balance text-center">
+              Este es un deporte de equipo que se juega entre dos equipos de
+              cinco jugadores cada uno. El objetivo del juego es anotar puntos
+              lanzando la pelota a través de un aro elevado.
+            </p>
+          </div>
+          <img
+            class="timeline-view animate-rotate-360 animate-range-cover md:size-80"
+            src="./src/assets/img/ball-basket.webp"
+            alt="Pelota de baloncesto"
+          />
+        </section>
+      </section>
+      <section class="section-container bg-white">
+        <section class="section-content">
+          <h2 class="text-primary-light text-3xl font-bold">
+            ¿Por qué me gusta?
+          </h2>
+          <p class="text-lg text-balance text-center text-black">
+            Porque ha sido algo muy importante, ya que cuando me sentía
+            desanimado, triste o aburrido, me iba a la cancha de mi colonia a
+            jugar y fue mi forma de desahogarme y liberar mi estrés.
+          </p>
+          <img
+            class="size-1/2 object-cover rounded-lg shadow-lg shadow-black"
+            src="./src/assets/img/therapy-basketball.webp"
+            alt="Terapia de baloncesto"
+          />
+          <p class="text-lg text-balance text-center text-black">
+            Además, me gusta porque me ha ayudado a desarrollar habilidades como
+            el trabajo en equipo, la disciplina y la perseverancia.
+          </p>
+        </section>
+      </section>
+      <section class="section-container bg-primary" id="time-section">
+        <section class="section-content">
+          <h2 class="text-primary-light text-3xl font-bold">
+            ¿Cuánto tiempo juego?
+          </h2>
+          <p class="text-lg text-balance text-center">
+            Debido a que estoy enfocado en mis estudios, solo juego 5 horas por
+            semana. Repartiendolos entre Sábado y Domingo.
+          </p>
+          <div
+            class="flex flex-col items-center bg-gray-950 py-5 shadow-lg shadow-black w-1/2"
+          >
+            <div class="flex items-center gap-2 bg-gray-900">
+              <span
+                class="text-4xl font-bold font-mono text-gray-700"
+                id="timer-minutes"
+              >
+                00:
+              </span>
+              <span class="text-4xl font-bold timer-neon font-mono" id="timer"
+                >24</span
+              >
+            </div>
+          </div>
+          <h2 class="text-primary-light text-3xl font-bold">Otros datos</h2>
+          <ul
+            class="flex flex-col gap-2 text-lg text-balance list-disc list-inside"
+          >
+            <li><span>Posición: Alero</span></li>
+            <li><span>Casi federado</span></li>
+            <li><span>Club: Leones</span></li>
+            <li><span>Total de equipos en los que he jugado: 3</span></li>
+            <li><span>Campeonatos de colonia: 1</span></li>
+            <li><span>Ya no juego a nivel competitivo</span></li>
+          </ul>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>

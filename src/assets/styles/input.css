@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@import "tailwind-animations";
+
+@font-face {
+  font-family: "rubik-medium";
+  src: url("../fonts/rubik-medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@theme {
+  --color-primary: #243165;
+  --color-primary-light: #83a5fa;
+  --color-primary-dark: #232461;
+  --font-rubik: "rubik-medium", ui-sans-serif, system-ui;
+  --color-kinal-blue-dark: #16233f;
+}
+
+.line-button {
+  @apply w-full h-1 bg-black transition-all duration-300;
+}
+
+.section-content {
+  @apply flex flex-col justify-center items-center gap-5 timeline-view animate-fade-in-up animate-range-[entry_10%_cover_45%] text-white md:shadow-lg md:shadow-primary-dark md:p-15 md:w-1/2;
+}
+.section-container {
+  @apply flex flex-col justify-center items-center gap-5 h-dvh p-10;
+}
+
+.title-section {
+  @apply text-primary-light text-3xl font-bold;
+}
+
+.timer-neon {
+  @apply text-amber-300 [text-shadow:0_0_10px_#ef4444,0_0_20px_#ef4444,0_0_40px_#ef4444];
+}
