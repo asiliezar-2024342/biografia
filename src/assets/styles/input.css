@@ -2,10 +2,20 @@
 
 @import "tailwind-animations";
 
+@font-face {
+  font-family: "rubik-medium";
+  src: url("../fonts/rubik-medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
 @theme {
   --color-primary: #243165;
   --color-primary-light: #83a5fa;
   --color-primary-dark: #232461;
+  --font-rubik: "rubik-medium", ui-sans-serif, system-ui;
+  --color-kinal-blue-dark: #16233f;
 }
 
 .line-button {

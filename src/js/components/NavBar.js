@@ -21,7 +21,7 @@ export class Header extends HTMLElement {
                         <li class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"><a href="/index.html">Interés</a></li>
                         <li class="hover:text-primary md:hover:text-primary-light transition-colors duration-300"><a href="/src/pages/biography.html">Biografía</a></li>
                     </ul>
-                    <button class="bg-primary-dark text-white p-2 rounded-lg cursor-pointer hover:bg-primary transition-colors duration-300">Ir a Kinal</button>
+                    <a href="/src/pages/redesign.html" class="bg-primary-dark text-white p-2 rounded-lg cursor-pointer hover:bg-primary transition-colors duration-300">Ir a Kinal</a>
                 </nav>
             </header>`;
 
